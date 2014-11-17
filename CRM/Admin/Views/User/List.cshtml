@@ -1,0 +1,23 @@
+﻿@model Crm.Admin.Models.UserListModel
+@{
+    ViewBag.Title = "CRM Admin";
+}
+@section scripts
+{
+    @Scripts.Render("~/bundles/jqueryajax")
+}
+<h1>@ViewBag.Title</h1>
+@using (Ajax.BeginForm(
+    "List",
+    new AjaxOptions
+    {
+        Url = Url.Action("ListAjax"),
+        HttpMethod = "post",
+        UpdateTargetId = "user-list",
+        InsertionMode = InsertionMode.Replace
+    }
+))
+{
+    <div id="user-list">@Html.Partial("UserList", Model)</div>
+    @Html.ActionLink("Add New User", "Add", "User")
+}
