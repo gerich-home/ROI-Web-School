@@ -3,6 +3,11 @@
 	using System;
 	using System.Data.Entity;
 	using System.Linq;
+<<<<<<< HEAD
+=======
+	using System.Security.Cryptography;
+	using System.Text;
+>>>>>>> 7af9fb1ea3b1a3e81293ef60abbc90bb0747ed25
 	using Data;
 	using Data.Entities;
 	using Domain;
@@ -11,7 +16,18 @@
 
 	[Service(ServiceOption.Singleton)]
     internal class UserService : IUserService
+<<<<<<< HEAD
     {
+=======
+	{
+		private static byte[] GetPasswordHash(string password)
+		{
+			if (string.IsNullOrEmpty(password)) return null;
+			using (var hash = SHA1.Create())
+				return hash.ComputeHash(Encoding.Unicode.GetBytes(password));
+		}
+
+>>>>>>> 7af9fb1ea3b1a3e81293ef60abbc90bb0747ed25
         public void Create(IUser user, string password)
         {
 	        using (var context = CrmContextFactory.Get())
@@ -22,7 +38,11 @@
 				        FirstName = user.FirstName,
 				        LastName = user.LastName,
 				        Login = user.Login,
+<<<<<<< HEAD
 				        Password = password
+=======
+						Password = { Hash = GetPasswordHash(password) }
+>>>>>>> 7af9fb1ea3b1a3e81293ef60abbc90bb0747ed25
 			        }
 			    );
 
@@ -92,11 +112,36 @@
 			{
 				var dbUser = context.Users.Find(id);
 				if (dbUser == null) throw new ArgumentException("User not found.", "id");
+<<<<<<< HEAD
 				dbUser.Password = password;
+=======
+				dbUser.Password.Hash = GetPasswordHash(password);
+>>>>>>> 7af9fb1ea3b1a3e81293ef60abbc90bb0747ed25
 				context.SaveChanges();
 			}
 		}
 
+<<<<<<< HEAD
+=======
+		public IUser Authenticate(string login, string password)
+		{
+			if (string.IsNullOrEmpty(login)) return null;
+			var hash = string.IsNullOrEmpty(password) ? null : GetPasswordHash(password);
+			using (var context = CrmContextFactory.Get())
+			{
+				return context.Users
+					.Where(user =>
+						login.Equals(user.Login, StringComparison.InvariantCultureIgnoreCase)
+						&& Equals(user.Password.Hash, hash)
+					)
+					.Select(user =>
+						new DomainUser {Id = user.Id, Login = user.Login, FirstName = user.FirstName, LastName = user.LastName}
+					)
+					.FirstOrDefault();
+			}
+		}
+
+>>>>>>> 7af9fb1ea3b1a3e81293ef60abbc90bb0747ed25
 		public IEnumerable<IUser> GetAll()
 	    {
 		    using (var context = CrmContextFactory.Get())

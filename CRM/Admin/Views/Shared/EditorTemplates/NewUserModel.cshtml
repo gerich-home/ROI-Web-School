@@ -1,10 +1,19 @@
+<<<<<<< HEAD
 ﻿@model Crm.Admin.Models.NewUserModel
+=======
+﻿@using Crm.Admin.Models
+@model NewUserModel
+>>>>>>> 7af9fb1ea3b1a3e81293ef60abbc90bb0747ed25
 <fieldset>
     <legend>Login Info</legend>
     @Html.LabelFor(model => model.Login) @Html.EditorFor(model => model.Login)
     <fieldset>
         <legend>@Html.LabelFor(model => model.Password)</legend>
+<<<<<<< HEAD
         @Html.LabelFor(model => model.Password1) @Html.EditorFor(model => model.Password2)
+=======
+        @Html.EditorFor(model => model.Password)
+>>>>>>> 7af9fb1ea3b1a3e81293ef60abbc90bb0747ed25
     </fieldset>
 </fieldset>
 <fieldset>

@@ -9,6 +9,10 @@
         void Update(IUser user);
         void Delete(int id);
 		void SetPassword(int id, string password);
+<<<<<<< HEAD
+=======
+		IUser Authenticate(string login, string password);
+>>>>>>> 7af9fb1ea3b1a3e81293ef60abbc90bb0747ed25
 		IEnumerable<IUser> GetAll();
     }
 }

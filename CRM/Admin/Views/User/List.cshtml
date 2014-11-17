@@ -4,7 +4,10 @@
 }
 @section scripts
 {
+<<<<<<< HEAD
     @Scripts.Render("~/bundles/jquery")
+=======
+>>>>>>> 7af9fb1ea3b1a3e81293ef60abbc90bb0747ed25
     @Scripts.Render("~/bundles/jqueryajax")
 }
 <h1>@ViewBag.Title</h1>
@@ -19,8 +22,13 @@
     }
 ))
 {
+<<<<<<< HEAD
     <a href="@Url.Action("Index", "Home", new { id = 5 })">Go Home</a>
     <div id="user-list">
         @Html.Partial("UserList", Model)
     </div>
+=======
+    <div id="user-list">@Html.Partial("UserList", Model)</div>
+    @Html.ActionLink("Add New User", "Add", "User")
+>>>>>>> 7af9fb1ea3b1a3e81293ef60abbc90bb0747ed25
 }

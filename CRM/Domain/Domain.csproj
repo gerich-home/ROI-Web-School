@@ -36,6 +36,10 @@
   <ItemGroup>
     <Compile Include="IUser.cs" />
     <Compile Include="IUserService.cs" />
+<<<<<<< HEAD
+=======
+    <Compile Include="Metadata\User.cs" />
+>>>>>>> 7af9fb1ea3b1a3e81293ef60abbc90bb0747ed25
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

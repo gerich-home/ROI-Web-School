@@ -116,26 +116,58 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\BundleConfig.cs" />
+<<<<<<< HEAD
+=======
+    <Compile Include="Controllers\AuthenticationController.cs" />
+>>>>>>> 7af9fb1ea3b1a3e81293ef60abbc90bb0747ed25
     <Compile Include="Controllers\UserController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Helpers\EnumerableHelpers.cs" />
+<<<<<<< HEAD
+=======
+    <Compile Include="Models\AuthenticationModel.cs" />
+    <Compile Include="Models\UserCredentialsModel.cs" />
+>>>>>>> 7af9fb1ea3b1a3e81293ef60abbc90bb0747ed25
     <Compile Include="Models\NewPasswordModel.cs" />
     <Compile Include="Models\NewUserModel.cs" />
     <Compile Include="Models\UserListModel.cs" />
     <Compile Include="Models\UserModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+<<<<<<< HEAD
+=======
+    <Compile Include="Views\Authentication\Localization.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Localization.resx</DependentUpon>
+    </Compile>
+>>>>>>> 7af9fb1ea3b1a3e81293ef60abbc90bb0747ed25
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Content Include="Global.asax" />
+<<<<<<< HEAD
     <None Include="Scripts\jquery-1.8.3.intellisense.js" />
     <Content Include="Scripts\jquery-1.8.3.js" />
     <Content Include="Scripts\jquery-1.8.3.min.js" />
     <Content Include="Scripts\jquery.unobtrusive-ajax.js" />
     <Content Include="Scripts\jquery.unobtrusive-ajax.min.js" />
+=======
+    <None Include="Scripts\jquery-2.1.1.intellisense.js" />
+    <Content Include="Scripts\jquery-2.1.1.js" />
+    <Content Include="Scripts\jquery-2.1.1.min.js" />
+    <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery.unobtrusive-ajax.js" />
+    <Content Include="Scripts\jquery.unobtrusive-ajax.min.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Styles\Login.css" />
+    <Content Include="Styles\Site.css" />
+>>>>>>> 7af9fb1ea3b1a3e81293ef60abbc90bb0747ed25
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -151,6 +183,13 @@
     <Content Include="Views\Shared\EditorTemplates\UserModel.cshtml" />
     <Content Include="Views\User\Edit.cshtml" />
     <Content Include="Views\Shared\EditorTemplates\NewPasswordModel.cshtml" />
+<<<<<<< HEAD
+=======
+    <Content Include="Views\Authentication\Login.cshtml" />
+    <Content Include="Scripts\jquery-2.1.1.min.map" />
+    <Content Include="Views\Shared\EditorTemplates\AuthenticationModel.cshtml" />
+    <Content Include="Views\Shared\EditorTemplates\LoginModel.cshtml" />
+>>>>>>> 7af9fb1ea3b1a3e81293ef60abbc90bb0747ed25
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -180,6 +219,15 @@
   <ItemGroup>
     <Content Include="Views\User\UserList.cshtml" />
   </ItemGroup>
+<<<<<<< HEAD
+=======
+  <ItemGroup>
+    <EmbeddedResource Include="Views\Authentication\Localization.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Localization.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+>>>>>>> 7af9fb1ea3b1a3e81293ef60abbc90bb0747ed25
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

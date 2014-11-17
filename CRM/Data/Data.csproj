@@ -60,6 +60,15 @@
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
+<<<<<<< HEAD
+=======
+  <ItemGroup>
+    <ProjectReference Include="..\Domain\Domain.csproj">
+      <Project>{8a75c983-66d1-4531-ac14-f5a93425680c}</Project>
+      <Name>Domain</Name>
+    </ProjectReference>
+  </ItemGroup>
+>>>>>>> 7af9fb1ea3b1a3e81293ef60abbc90bb0747ed25
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

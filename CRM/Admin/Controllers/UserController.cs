@@ -37,7 +37,17 @@
         [HttpGet]
         public ActionResult Add()
         {
+<<<<<<< HEAD
             return View();
+=======
+
+	        return View(
+				new NewUserModel
+				{
+					CancelUrl = Request.UrlReferrer != null ? Request.UrlReferrer.OriginalString : null
+				}
+			);
+>>>>>>> 7af9fb1ea3b1a3e81293ef60abbc90bb0747ed25
         }
 
         [HttpPost]
@@ -56,7 +66,11 @@
                 return View(model);
             }
 
+<<<<<<< HEAD
             return RedirectToAction("Index");
+=======
+            return RedirectToAction("List");
+>>>>>>> 7af9fb1ea3b1a3e81293ef60abbc90bb0747ed25
         }
 
 		[HttpGet]

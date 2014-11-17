@@ -3,7 +3,13 @@
 <head>
     <title>@ViewBag.Title</title>
     @RenderSection("header", required: false)
+<<<<<<< HEAD
     @RenderSection("styles", required: false)
+=======
+    @Styles.Render("~/bundles/site")
+    @RenderSection("styles", required: false)
+    @Scripts.Render("~/bundles/jquery", "~/bundles/jqueryval")
+>>>>>>> 7af9fb1ea3b1a3e81293ef60abbc90bb0747ed25
     @RenderSection("scripts", required: false)
 </head>
 <body>

@@ -69,6 +69,14 @@ namespace UnitTests
 		        throw new NotImplementedException();
 	        }
 
+<<<<<<< HEAD
+=======
+	        public IUser Authenticate(string login, string password)
+	        {
+		        throw new NotImplementedException();
+	        }
+
+>>>>>>> 7af9fb1ea3b1a3e81293ef60abbc90bb0747ed25
 	        public IEnumerable<IUser> GetAll()
 	        {
 		        throw new NotImplementedException();
