@@ -4,10 +4,10 @@
 	using System.Web.Mvc;
 	using Models;
 
-	public class UserController : Controller
+	public class HomeController : Controller
     {
 		[HttpGet]
-        public ActionResult List()
+        public ActionResult Index()
         {
             return View(new UserListModel());
         }
@@ -20,7 +20,7 @@
 				if (model.DeleteId.HasValue)
 					UserModel.Delete(model.DeleteId.Value);
 		    }
-		    return View(model);
+		    return View("Index", model);
 	    }
 
 	    [HttpPost]
@@ -58,29 +58,5 @@
 
             return RedirectToAction("Index");
         }
-
-		[HttpGet]
-		public ActionResult Edit(int id)
-		{
-			return View(new UserModel(id));
-		}
-
-		[HttpPost]
-		public ActionResult Edit(UserModel model)
-		{
-			if (ModelState.IsValid)
-			{
-				try
-				{
-					model.Save();
-					return RedirectToAction("List");
-				}
-				catch (Exception ex)
-				{
-					ModelState.AddModelError(string.Empty, ex);
-				}
-			}
-			return View(model);
-		}
 	}
 }
