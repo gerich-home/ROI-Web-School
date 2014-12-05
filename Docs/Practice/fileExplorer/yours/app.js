@@ -10,10 +10,8 @@ $(function() {
 		.end()
 		.click(function(event) {
 			event.stopPropagation();
-			
 			var self = $(this);
 			var children = self.find(".list-group");
-			
 			if(fileSystem.isLoaded) {
 				children.slideToggle();
 				return;
@@ -34,6 +32,12 @@ $(function() {
 							.text(fileSystem.children[i].name);
 					} else {
 						// TODO: add files
+                        $("#file")
+	                        .clone()
+		                    .removeAttr("id")
+		                    .appendTo(children)
+		                    .find(".caption")
+		                    .text(fileSystem.children[i].name);
 					}
 				}
 
