@@ -2,25 +2,34 @@
 @{
     ViewBag.Title = "Index";
 }
+<!DOCTYPE html>
+<html>
+<head>
+    <title>UserList</title>
+    <link rel="stylesheet" type="text/css" href="@Url.Content("~/Styles/Index.css")" />
+    </head>
+<body>
 <table>
     <caption>Users</caption>
     <thead>
-        <tr>
-            <th>@Html.DisplayNameFor(model => model.Id)</th>
-            <th>@Html.DisplayNameFor(model => model.FirstName)</th>
-            <th>@Html.DisplayNameFor(model => model.LastName)</th>
-            <th>@Html.DisplayNameFor(model => model.Login)</th>
-        </tr>
+    <tr>
+        <th>@Html.DisplayNameFor(model => model.Id)</th>
+        <th>@Html.DisplayNameFor(model => model.FirstName)</th>
+        <th>@Html.DisplayNameFor(model => model.LastName)</th>
+
+    </tr>
     </thead>
     <tbody>
-        @foreach (var user in Model)
-        {
-            <tr>
-                <td>@user.Id</td>
-                <td>@user.FirstName</td>
-                <td>@user.LastName</td>
-                <td>@user.Login</td>
-            </tr>
-        }
+    @foreach (var user in Model)
+    {
+        <tr>
+            <td>@user.Id</td>
+            <td>@user.FirstName</td>
+            <td>@user.LastName</td>
+
+        </tr>
+    }
     </tbody>
 </table>
+</body>
+</html>

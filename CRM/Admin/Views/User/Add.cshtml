@@ -8,7 +8,7 @@
     @Html.AntiForgeryToken()
     @Html.EditorForModel()
     <button type="submit">Create</button>
-    if(!string.IsNullOrEmpty(Model.CancelUrl))
+    if (!string.IsNullOrEmpty(Model.CancelUrl))
     {
         <a href="@Model.CancelUrl">Cancel</a>
     }
