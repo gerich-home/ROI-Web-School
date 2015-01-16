@@ -1,0 +1,10 @@
+C:\Users\Мария\Downloads\Вышка\Программирование\Return on intellengens\Docs\Practice\ProductAssistant\ProductAssistant.DAL\bin\Debug\ProductAssistant.DAL.dll.config
+C:\Users\Мария\Downloads\Вышка\Программирование\Return on intellengens\Docs\Practice\ProductAssistant\ProductAssistant.DAL\bin\Debug\ProductAssistant.DAL.dll
+C:\Users\Мария\Downloads\Вышка\Программирование\Return on intellengens\Docs\Practice\ProductAssistant\ProductAssistant.DAL\bin\Debug\ProductAssistant.DAL.pdb
+C:\Users\Мария\Downloads\Вышка\Программирование\Return on intellengens\Docs\Practice\ProductAssistant\ProductAssistant.DAL\bin\Debug\EntityFramework.dll
+C:\Users\Мария\Downloads\Вышка\Программирование\Return on intellengens\Docs\Practice\ProductAssistant\ProductAssistant.DAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Мария\Downloads\Вышка\Программирование\Return on intellengens\Docs\Practice\ProductAssistant\ProductAssistant.DAL\bin\Debug\EntityFramework.xml
+C:\Users\Мария\Downloads\Вышка\Программирование\Return on intellengens\Docs\Practice\ProductAssistant\ProductAssistant.DAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Мария\Downloads\Вышка\Программирование\Return on intellengens\Docs\Practice\ProductAssistant\ProductAssistant.DAL\obj\Debug\ProductAssistant.DAL.csprojResolveAssemblyReference.cache
+C:\Users\Мария\Downloads\Вышка\Программирование\Return on intellengens\Docs\Practice\ProductAssistant\ProductAssistant.DAL\obj\Debug\ProductAssistant.DAL.dll
+C:\Users\Мария\Downloads\Вышка\Программирование\Return on intellengens\Docs\Practice\ProductAssistant\ProductAssistant.DAL\obj\Debug\ProductAssistant.DAL.pdb
