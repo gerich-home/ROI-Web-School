@@ -1,0 +1,54 @@
+﻿@section Scripts {
+    @System.Web.Optimization.Scripts.Render("http://code.jquery.com/jquery-2.1.1.js")
+    @System.Web.Optimization.Scripts.Render("http://code.jquery.com/jquery-2.1.1.min.js")
+    @System.Web.Optimization.Scripts.Render("~/bundles/jquery", "~/bundles/web", "~/Scripts/ContactAssistant.js", "~/Scripts/ClientAssistant.js")
+}
+<div>
+    <div>
+        <div>
+            <div>
+                <header>
+                    <div class="content-wrapper">
+                        <div class="float-right">
+                            <nav>
+                                <ul id="menu">
+                                    <li>@Html.ActionLink("Log off", "Index", "Home", new { area = "" }, null)</li><!--работает!-->
+                                    <li>@Html.ActionLink("Home", "Index", "HomeAssistant", new { area = "" }, null)</li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </header>
+            </div>
+            <div>
+                <div id="logOut" data-bind="css: align='right'">
+                    <p>Hello,</p>
+                </div>
+            </div>
+            <div>
+                <div id="ClientName" data-bind="css: align='left'">
+                    <p>Client:</p>
+                </div>
+                <div id="ClientAge" data-bind="css: align='right'">
+                    <p>Age:</p>
+                </div>
+            </div>
+            <div id="PhoneListBlock" data-bind="css: align='left'">
+                <p>Contacts:</p>
+            </div>
+            <div id="HistoryOfOperationsListBlock" data-bind="css: align='right'">
+                <p>History Of Operations:</p>
+            </div>
+            <div id="OperationSelectBlock">
+                <input id="selectOperation" type="text" />
+            </div>
+
+            <div id="add">
+                <button id="addClient">Save</button>
+            </div>
+            <div id="cancel">
+                <button class="toHome">Cancel</button>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,81 @@
+﻿@section Scripts {
+    @System.Web.Optimization.Scripts.Render("http://code.jquery.com/jquery-2.1.1.js")
+    @System.Web.Optimization.Scripts.Render("http://code.jquery.com/jquery-2.1.1.min.js")
+    @System.Web.Optimization.Scripts.Render("~/bundles/jquery","~/bundles/web", "~/Scripts/ContactAssistant.js", "~/Scripts/ClientAssistant.js")
+}
+    @System.Web.Optimization.Styles.Render( "~/Content/addClient.css")
+<div>
+     <div>
+         <div>
+             <header>
+                 <div class="content-wrapper">
+                     <div class="float-right">
+                         <nav>
+                             <ul id="menu">
+                                 <li>@Html.ActionLink("Log off", "Index", "Home", new { area = "" }, null)</li><!--работает!-->
+                                 <li>@Html.ActionLink("Home", "Index", "HomeAssistant", new { area = "" }, null)</li>
+                             </ul>
+                         </nav>
+                     </div>
+                 </div>
+             </header>
+         </div>
+            <div>
+                <p>Hello,</p>
+            </div>
+         <div data-bind="css: align='left'">
+             <div id="addClientBlock">
+                 <table>
+                     <tr>
+                         <td>
+                             <input id="addId" type="hidden" />
+                         </td>
+                     </tr>
+                     <tr>
+                         <td>
+                             <label>First Name: </label><input id="addFirstName" type="text" />
+                         </td>
+                     </tr>
+                     <tr>
+                         <td>
+                             <label>Last Name: </label><input id="addLastName" type="text" />
+                         </td>
+                     </tr>
+                     <tr>
+                         <td>
+                             <label>Date of birth: </label><input id="addDataBirth" type="date" />
+                         </td>
+                     </tr>
+                 </table>
+             </div>
+             <div id="buttons">
+                 <div id="add">
+                     <button id="addClient" data-bind="css: margin='15px'">Save</button>
+                 </div>
+                 <div id="cancel">
+                     <button class="toHome" data-bind="css: margin='15px'">Cancel</button>
+                 </div>
+             </div>
+         </div>
+         <div data-bind ="css: align='right'">
+                <div id=" contactlistblock">
+             Contacts
+</div>
+                <div id="PhoneSelectBlock">
+                    <input id="phoneNumber" type="text" />
+                    <div class="box">
+                        <h3><span>Please select a contact type</span></h3>
+                        <ul>
+                            <li title="Other">Other</li>
+                            <li title="Mobile">Mobile</li>
+                            <li title="Home">Home</li>
+                            <li title="Work">Work</li>
+                        </ul>
+
+                    </div>
+                    <button class="addPhone">Add Contact</button>
+                </div>
+            </divdata-bind>
+        </div>
+    </div>
+</div>
