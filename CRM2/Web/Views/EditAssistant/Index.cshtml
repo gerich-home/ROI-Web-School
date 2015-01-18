@@ -1,0 +1,72 @@
+﻿@section Scripts {
+    @System.Web.Optimization.Scripts.Render("http://code.jquery.com/jquery-2.1.1.js")
+    @System.Web.Optimization.Scripts.Render("http://code.jquery.com/jquery-2.1.1.min.js")
+    @System.Web.Optimization.Scripts.Render("~/bundles/jquery", "~/bundles/web", "~/Content/addClient.css", "~/Scripts/EditAssistant.js" , "~/Scripts/ContactAssistant.js", "~/Scripts/ClientAssistant.js")
+}
+<div>
+    <div>
+        <div>
+
+            <div>
+                <header>
+                    <div class="content-wrapper">
+                        <div class="float-right">
+                            <nav>
+                                <ul id="menu">
+                                    <li>@Html.ActionLink("Log off", "Index", "Home", new { area = "" }, null)</li><!--работает!-->
+                                    <li>@Html.ActionLink("Home", "Index", "HomeAssistant", new { area = "" }, null)</li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </header>
+            </div>
+            <div>
+                <div id="logOut" data-bind="css: align='left'">
+                    <p >Hello,</p>
+                </div>
+            </div>
+            <div id="addClientBlock" data-bind="css: margin='15px'">
+                <table>
+                    <tr>
+                        <td>
+                            <input id="editId" type="hidden" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>First Name: </label><input id="editFirstName" type="text" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>Last Name: </label><input id="editLastName" type="text" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>Date of birth: </label><input id="editDataBirth" type="date" />
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div id="buttons">
+                <div id="edit">
+                    <button id="editClient">Save</button>
+                </div>
+                <div id="cancel">
+                    <button class="toHome">Cancel</button>
+                </div>
+            </div>
+            <div>
+                <div id="ContactListBlock">
+                    Contacts
+                </div>
+                <div id="PhoneSelectBlock">
+                    <input id="phoneNumber" type="text" />
+                    <button class="addPhone">Add Contact</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
