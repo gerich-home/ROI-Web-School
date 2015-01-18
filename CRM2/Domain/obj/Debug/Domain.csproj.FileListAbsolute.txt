@@ -1,4 +1,0 @@
-C:\Users\Мария\Desktop\CRM\Domain\bin\Debug\CRM.Domain.dll
-C:\Users\Мария\Desktop\CRM\Domain\bin\Debug\CRM.Domain.pdb
-C:\Users\Мария\Desktop\CRM\Domain\obj\Debug\CRM.Domain.dll
-C:\Users\Мария\Desktop\CRM\Domain\obj\Debug\CRM.Domain.pdb
