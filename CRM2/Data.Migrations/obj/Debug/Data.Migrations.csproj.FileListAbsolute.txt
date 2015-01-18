@@ -1,0 +1,17 @@
+C:\Users\Мария\Desktop\CRM\Data.Migrations\bin\Debug\CRM.Data.Migrations.dll.config
+C:\Users\Мария\Desktop\CRM\Data.Migrations\bin\Debug\CRM.Data.Migrations.dll
+C:\Users\Мария\Desktop\CRM\Data.Migrations\bin\Debug\CRM.Data.Migrations.pdb
+C:\Users\Мария\Desktop\CRM\Data.Migrations\bin\Debug\CRM.Data.dll
+C:\Users\Мария\Desktop\CRM\Data.Migrations\bin\Debug\CRM.Domain.dll
+C:\Users\Мария\Desktop\CRM\Data.Migrations\bin\Debug\EntityFramework.dll
+C:\Users\Мария\Desktop\CRM\Data.Migrations\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Мария\Desktop\CRM\Data.Migrations\bin\Debug\CRM.Data.pdb
+C:\Users\Мария\Desktop\CRM\Data.Migrations\bin\Debug\CRM.Domain.pdb
+C:\Users\Мария\Desktop\CRM\Data.Migrations\bin\Debug\EntityFramework.xml
+C:\Users\Мария\Desktop\CRM\Data.Migrations\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Мария\Desktop\CRM\Data.Migrations\obj\Debug\Crm.Data.Migrations.Migrations.InitialCreate.resources
+C:\Users\Мария\Desktop\CRM\Data.Migrations\obj\Debug\Crm.Data.Migrations.Migrations.HashedPasswords.resources
+C:\Users\Мария\Desktop\CRM\Data.Migrations\obj\Debug\Crm.Data.Migrations.Migrations.UniqueLogin.resources
+C:\Users\Мария\Desktop\CRM\Data.Migrations\obj\Debug\Data.Migrations.csproj.GenerateResource.Cache
+C:\Users\Мария\Desktop\CRM\Data.Migrations\obj\Debug\CRM.Data.Migrations.dll
+C:\Users\Мария\Desktop\CRM\Data.Migrations\obj\Debug\CRM.Data.Migrations.pdb
