@@ -1,0 +1,22 @@
+﻿@model Domain.AddClient
+<fieldset>
+    @Html.BeginForm("Add","Client");
+    <div>
+        <div>
+            @Html.LabelFor(model => model.FirstName) <br/>@Html.EditorFor(model => model.FirstName)
+            <br/>@Html.LabelFor(model => model.LastName)<br/>@Html.EditorFor(model => model.LastName)
+            <br/>Date of birth<br/>
+            <input type="date">
+        </div>
+        <div>
+            <br/>@Html.DropDownListFor(model => model.TypeCall, new SelectList(new[] {"home", "mobile", "work", "other"}))
+            <div class="button-pane">
+                <button class="btn" type="submit">Save</button>
+            </div>
+            @{ Html.RenderPartial("~/Views/Shared/EditorTemplates/_PartialViewContacts.cshtml"); }
+            <br/>@Html.LabelFor(model => model.PhoneNumber)@Html.EditorFor(model => model.PhoneNumber)
+        </div>
+    </div>
+
+
+</fieldset>

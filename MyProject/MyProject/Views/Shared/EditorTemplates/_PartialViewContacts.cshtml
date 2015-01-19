@@ -1,0 +1,63 @@
+﻿@model IEnumerable<Domain.Partial1Model>
+
+<table>
+    <thead>
+        <tr>
+            <th>Phone</th>
+            <th>Type</th>
+            <th></th>
+       </tr>
+    </thead>
+<tbody>
+@if (Model != null)
+{
+    for (var i = 0; i < 3; i++)
+    {
+        <tr>
+            <td>
+                @Model.ElementAt(i).PhoneNr
+            </td>
+            <td>
+                @Model.ElementAt(i).PhoneType)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit")@Html.ActionLink("Edit", "Delete")
+            </td>
+
+        </tr>
+    }
+}
+else
+{
+    for (var i = 0; i < 3; i++)
+    {
+        <tbody>
+        <tr>
+            <td>1111111111111
+            </td>
+            <td>2222222222222
+            </td>
+            <td>3333333333333
+            </td>
+
+        </tr>
+        </tbody>
+    }
+}
+<tr>
+    <td></td>
+    <td></td>
+    <td></td>
+</tr>
+<tr>
+    <td></td>
+    <td></td>
+    <td></td>
+</tr>
+<tr>
+    <td></td>
+    <td></td>
+    <td></td>
+</tr>
+</tbody>
+</table>
