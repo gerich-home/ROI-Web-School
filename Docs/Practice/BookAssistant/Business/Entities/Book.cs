@@ -1,4 +1,4 @@
-﻿namespace BookAssistant.Bussines.Entities
+namespace BookAssistant.Bussines.Entities
 {
     public class Book
     {
@@ -7,5 +7,6 @@
         public string Description { set; get; }
         public string Author { set; get; }
         public string Img { set; get; }
+        public string News { set; get; }
     }
 }
