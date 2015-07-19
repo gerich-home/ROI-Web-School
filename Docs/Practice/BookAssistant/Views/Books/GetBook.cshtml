@@ -1,4 +1,18 @@
-﻿@model BookAssistant.Bussines.Entities.Book
+@model BookAssistant.Bussines.Entities.Book
+@using System.Web.Optimization
+@Scripts.Render("~/Script/jqueryAjax")
+<script>
+
+    $("img").on("mouseenter", function () {
+        $("#popup").text($(this).attr('News')).show();
+    });
+
+    $("img").on("mouseleave", function () {
+        $("#popup").hide();
+    });
+
+</script>
+
 
 <div id="selectedBook">
     <table>
