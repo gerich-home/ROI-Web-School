@@ -8,19 +8,19 @@
     <link rel="stylesheet" type="text/css" href="@Url.Content("~/Styles/Login.css")" />
     @Scripts.Render("~/bundles/jquery", "~/bundles/jqueryval")
 </head>
-    <body>
-        <div>
-            <div id="login">
-                <h1>@Localization.LoginHeader</h1>
-                @using (Html.BeginForm("Login", "Authentication"))
-                {
-                    @Html.AntiForgeryToken()
-                    @Html.EditorForModel()
-                    <div class="button-pane">
-                        <button type="submit">@Localization.Login</button>
-                    </div>
-                }
-            </div>
+<body>
+    <div>
+        <div id="login">
+            <h1>@Localization.LoginHeader</h1>
+            @using (Html.BeginForm("Login", "Authentication"))
+            {
+                @Html.AntiForgeryToken()
+                @Html.EditorForModel()
+                <div class="button-pane">
+                    <button type="submit">@Localization.Login</button>
+                </div>
+            }
         </div>
-    </body>
+    </div>
+</body>
 </html>
