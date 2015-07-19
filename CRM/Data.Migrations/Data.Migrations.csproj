@@ -40,19 +40,17 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Migrations\201411050840587_InitialCreate.cs" />
     <Compile Include="Migrations\201411050840587_InitialCreate.Designer.cs">
       <DependentUpon>201411050840587_InitialCreate.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201411111354458_HashedPasswords.cs" />
-    <Compile Include="Migrations\201411111354458_HashedPasswords.Designer.cs">
-      <DependentUpon>201411111354458_HashedPasswords.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201411131316467_UniqueLogin.cs" />
-    <Compile Include="Migrations\201411131316467_UniqueLogin.Designer.cs">
-      <DependentUpon>201411131316467_UniqueLogin.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -66,20 +64,10 @@
       <Project>{ceb89da9-4fa6-44e8-831c-950fb6beed20}</Project>
       <Name>Data</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Domain\Domain.csproj">
-      <Project>{8a75c983-66d1-4531-ac14-f5a93425680c}</Project>
-      <Name>Domain</Name>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201411050840587_InitialCreate.resx">
       <DependentUpon>201411050840587_InitialCreate.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201411111354458_HashedPasswords.resx">
-      <DependentUpon>201411111354458_HashedPasswords.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201411131316467_UniqueLogin.resx">
-      <DependentUpon>201411131316467_UniqueLogin.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

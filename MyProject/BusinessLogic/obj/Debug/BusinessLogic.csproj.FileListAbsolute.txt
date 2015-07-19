@@ -1,0 +1,14 @@
+C:\Users\Vladimir\Documents\Visual Studio 2013\Projects\MyProject\BusinessLogic\bin\Debug\BusinessLogic.dll
+C:\Users\Vladimir\Documents\Visual Studio 2013\Projects\MyProject\BusinessLogic\bin\Debug\BusinessLogic.pdb
+C:\Users\Vladimir\Documents\Visual Studio 2013\Projects\MyProject\BusinessLogic\obj\Debug\BusinessLogic.csprojResolveAssemblyReference.cache
+C:\Users\Vladimir\Documents\Visual Studio 2013\Projects\MyProject\BusinessLogic\obj\Debug\BusinessLogic.dll
+C:\Users\Vladimir\Documents\Visual Studio 2013\Projects\MyProject\BusinessLogic\obj\Debug\BusinessLogic.pdb
+C:\Users\Vladimir\Documents\Visual Studio 2013\Projects\MyProject\BusinessLogic\bin\Debug\BusinessLogic.dll.config
+C:\Users\Vladimir\Documents\Visual Studio 2013\Projects\MyProject\BusinessLogic\bin\Debug\Data1.dll
+C:\Users\Vladimir\Documents\Visual Studio 2013\Projects\MyProject\BusinessLogic\bin\Debug\Domain.dll
+C:\Users\Vladimir\Documents\Visual Studio 2013\Projects\MyProject\BusinessLogic\bin\Debug\EntityFramework.dll
+C:\Users\Vladimir\Documents\Visual Studio 2013\Projects\MyProject\BusinessLogic\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Vladimir\Documents\Visual Studio 2013\Projects\MyProject\BusinessLogic\bin\Debug\Data1.pdb
+C:\Users\Vladimir\Documents\Visual Studio 2013\Projects\MyProject\BusinessLogic\bin\Debug\Domain.pdb
+C:\Users\Vladimir\Documents\Visual Studio 2013\Projects\MyProject\BusinessLogic\bin\Debug\EntityFramework.xml
+C:\Users\Vladimir\Documents\Visual Studio 2013\Projects\MyProject\BusinessLogic\bin\Debug\EntityFramework.SqlServer.xml

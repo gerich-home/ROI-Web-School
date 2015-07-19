@@ -1,0 +1,44 @@
+﻿@model IEnumerable<Domain.IndexView>
+@{
+    ViewBag.Title = "Index";
+}
+@{
+    Layout = "~/Views/Shared/EditorTemplates/TemplatePage.cshtml";
+}
+<link rel="stylesheet" type="text/css" href="~/Styles/ForIndex.css" />
+<table>
+    <thead>
+        <tr>
+            <th></th>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Status</th>
+            <th>Call Time</th>
+            
+        </tr>
+    </thead>
+    <tbody>
+    @if (Model != null)
+    {
+        foreach (var client in Model)
+         {
+             <tr>
+                 <td>@Html.ActionLink("Edit", "Edit")</td>
+                 <td>
+                     @Html.DisplayFor(t => client.FirstName)
+                     @Html.DisplayFor(t => client.LastName)
+                 </td>
+                 <td>
+                     @Html.DisplayFor(t => client.DateOfBirth)
+                 </td>
+                 <td>
+                     @Html.DisplayFor(t => client.Operations.Type)
+                 </td>
+                 <td></td>
+             </tr>
+         }
+    }
+    </tbody>
+    
+</table>
+<button onclick="location.href='@Url.Action("AddClient", "Home")'" class="btn">Add new client</button>

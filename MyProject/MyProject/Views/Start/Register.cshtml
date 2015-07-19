@@ -1,0 +1,45 @@
+﻿@using System.Security.Policy
+@using System.Web.Optimization
+@model Domain.Registration
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Register</title>
+    @Scripts.Render("~/bundles/jquery", "~/bundles/jquery.validate.unobtrusive.bootstrap")
+    <link rel="stylesheet" type="text/css" href="~/Styles/Start.css">
+    <link rel="stylesheet" type="text/css" href="~/Styles/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="~/Styles/bootstrap-responsive.css">
+    <link rel="stylesheet" type="text/css" href="~/Styles/bootstrap-theme.css">
+</head>
+<body>
+<div>
+   
+    @using (Html.BeginForm("Register", "Start"))
+    {
+        @Html.AntiForgeryToken()
+        @Html.LabelFor(model => model.FirstName)
+        @Html.EditorFor(model => model.FirstName)
+        @Html.ValidationMessageFor(model => model.FirstName)<br/>
+        @Html.LabelFor(model => model.LastName)
+        @Html.EditorFor(model => model.LastName)
+        @Html.ValidationMessageFor(model => model.LastName)<br/>
+        @Html.LabelFor(model => model.Login)
+        @Html.EditorFor(model => model.Login)
+        @Html.ValidationMessageFor(model => model.Login)<br/>
+        @Html.LabelFor(model => model.Password)
+        @Html.PasswordFor(model => model.Password)
+        @Html.ValidationMessageFor(model => model.Password)<br/>
+        <div>
+            <button onclick=" location.href = '@Url.Action("Register", "Start")' " class=" btn" type="submit">Зарегистрироваться</button>
+        </div>
+    }
+</div>
+</body>
+</html>

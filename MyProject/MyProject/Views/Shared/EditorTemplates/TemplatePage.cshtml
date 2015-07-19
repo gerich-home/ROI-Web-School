@@ -1,0 +1,17 @@
+﻿@{
+    var cookie = Request.Cookies["Log"].Value;
+    ViewBag.log = cookie;
+}
+<a href="@Url.Action("Index", "Home")" text-decoration="underline" id="HomeLink">Home</a>
+<div id="LogoutLink">
+    Hello, Mr. @ViewBag.log
+
+    <a href="@Url.Action("Logout", "Home")" text-decoration="underline" id="LogoutLink">Logout</a>
+
+</div>
+<style type="text/css">
+    #LogoutLink {
+        float: right;
+    }
+</style>
+@RenderBody()

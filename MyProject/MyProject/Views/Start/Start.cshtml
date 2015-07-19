@@ -1,0 +1,63 @@
+﻿@using System.Web.Optimization
+@model Domain.Authentication
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width"/>
+    <title>AuthenticationModel</title>
+    <link rel="stylesheet" type="text/css" href="~/Styles/Start.css">
+    <link rel="stylesheet" type="text/css" href="~/Styles/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="~/Styles/bootstrap-responsive.css">
+    <link rel="stylesheet" type="text/css" href="~/Styles/bootstrap-theme.css">
+   </head>
+<body>
+<div class="fluid">
+    <div class="span12">
+        <h1>Phone Reminder</h1>
+        <div class="wrap">
+            <h2>Please, sign in or register</h2>
+        </div>
+        <div class="row-fluid">
+            <div class="span6">
+                <div class="left_login">
+                    <h3>If you already have registered</h3>
+                    <span class="form-inline" >
+                        @using (Html.BeginForm("Start", "Start"))
+                        {
+                            @Html.AntiForgeryToken()
+                            @Html.LabelFor(model => model.Login)
+                            @Html.EditorFor(model => model.Login)
+                            @Html.ValidationMessageFor(model => model.Login)<br />
+                            @Html.LabelFor(model => model.Password)
+                            @Html.PasswordFor(model => model.Password)
+                            @Html.ValidationMessageFor(model => model.Password)<br />
+
+                            <button class="btn" type="submit">Sign in</button>
+
+                        }
+                    </span>
+                </div>
+            </div>
+            <div class="span6">
+                <div class="right_register">
+                    <h3>If you are New user</h3>
+                    <p>Если вы первый раз на нашем сайте, пожалуйста зарегистрируйтесь</p>
+                    <button onclick=" location.href = '@Url.Action("Register", "Start")' " class=" btn">Зарегистрироваться</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+        
+        <div id="down"></div>
+</body>
+</html>
+</html>

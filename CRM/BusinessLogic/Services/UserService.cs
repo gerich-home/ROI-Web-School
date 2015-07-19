@@ -3,8 +3,6 @@
 	using System;
 	using System.Data.Entity;
 	using System.Linq;
-	using System.Security.Cryptography;
-	using System.Text;
 	using Data;
 	using Data.Entities;
 	using Domain;
@@ -13,14 +11,7 @@
 
 	[Service(ServiceOption.Singleton)]
     internal class UserService : IUserService
-	{
-		private static byte[] GetPasswordHash(string password)
-		{
-			if (string.IsNullOrEmpty(password)) return null;
-			using (var hash = SHA1.Create())
-				return hash.ComputeHash(Encoding.Unicode.GetBytes(password));
-		}
-
+    {
         public void Create(IUser user, string password)
         {
 	        using (var context = CrmContextFactory.Get())
@@ -31,7 +22,7 @@
 				        FirstName = user.FirstName,
 				        LastName = user.LastName,
 				        Login = user.Login,
-						Password = { Hash = GetPasswordHash(password) }
+				        Password = password
 			        }
 			    );
 
@@ -101,26 +92,8 @@
 			{
 				var dbUser = context.Users.Find(id);
 				if (dbUser == null) throw new ArgumentException("User not found.", "id");
-				dbUser.Password.Hash = GetPasswordHash(password);
+				dbUser.Password = password;
 				context.SaveChanges();
-			}
-		}
-
-		public IUser Authenticate(string login, string password)
-		{
-			if (string.IsNullOrEmpty(login)) return null;
-			var hash = string.IsNullOrEmpty(password) ? null : GetPasswordHash(password);
-			using (var context = CrmContextFactory.Get())
-			{
-				return context.Users
-					.Where(user =>
-						login.Equals(user.Login, StringComparison.InvariantCultureIgnoreCase)
-						&& Equals(user.Password.Hash, hash)
-					)
-					.Select(user =>
-						new DomainUser {Id = user.Id, Login = user.Login, FirstName = user.FirstName, LastName = user.LastName}
-					)
-					.FirstOrDefault();
 			}
 		}
 

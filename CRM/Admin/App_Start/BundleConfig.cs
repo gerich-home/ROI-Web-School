@@ -11,21 +11,10 @@
                 .Include("~/Scripts/jquery-{version}.js")
             );
 
-			bundles.Add(
-				new ScriptBundle("~/bundles/jqueryval")
-				.Include("~/Scripts/jquery.validate.js")
-				.Include("~/Scripts/jquery.validate.unobtrusive.js")
-			);
-
             bundles.Add(
                 new ScriptBundle("~/bundles/jqueryajax")
                 .Include("~/Scripts/jquery.unobtrusive-ajax.js")
             );
-
-			bundles.Add(
-				new StyleBundle("~/bundles/site")
-				.Include("~/Styles/Site.css")
-			);
 		}
 	}
 }
